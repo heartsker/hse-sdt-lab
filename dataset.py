@@ -7,13 +7,9 @@ class Dataset(ABC):
     """
 
     @abstractmethod
-    def __call__(self, *args: Any) -> Tuple[str, str, str]:
-        """Get data by index
-
-        Returns:
-            Tuple[str, str, str]: data
-        """
+    def __getitem__(self, index: int) -> Tuple[str, str, str]:
         pass
+
 
 class DefaultDataset(Dataset):
     """Default dataset
@@ -25,14 +21,21 @@ class DefaultDataset(Dataset):
         """Initialize dataset with data
 
         Args:
-            *args (Any): Data to initialize dataset with
+            data (List[Tuple[str, str, str]]): data to initialize dataset with
 
         """
-        assert args, "No data provided"
-        assert type(args) == list, "Data must be a list"
 
-        if args:
-            self.__data = args
+        self.__data = data
 
-    def __call__(self, *args: Any, **kwds: Any) -> Tuple[str, str, str]:
-        return self.__data[args]
+    def __getitem__(self, index: int) -> Tuple[str, str, str]:
+        """Get item by index
+
+        Args:
+            index (int): index of item
+
+        Returns:
+            Tuple[str, str, str]: item at index
+
+        """
+
+        return self.__data[index]

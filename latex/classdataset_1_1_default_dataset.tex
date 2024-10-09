@@ -11,7 +11,7 @@ Inheritance diagram for dataset.\+Default\+Dataset\+:\begin{figure}[H]
 \item 
 None \mbox{\hyperlink{classdataset_1_1_default_dataset_a587f5b00df990d00ac1c75418a51693a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}Tuple\mbox{[}str, str, str\mbox{]}\mbox{]} data)
 \item 
-Tuple\mbox{[}str, str, str\mbox{]} \mbox{\hyperlink{classdataset_1_1_default_dataset_a3c243fb9702565f827bd3b89783cabfb}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwds)
+Tuple\mbox{[}str, str, str\mbox{]} \mbox{\hyperlink{classdataset_1_1_default_dataset_a16ac2f71fda54038bc3024e47d978be8}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdataset_1_1_dataset}{dataset.\+Dataset}}}
 
@@ -31,24 +31,26 @@ Tuple\mbox{[}str, str, str\mbox{]} \mbox{\hyperlink{classdataset_1_1_default_dat
 \begin{DoxyVerb}Initialize dataset with data
 
 Args:
-    *args (Any): Data to initialize dataset with\end{DoxyVerb}
+    data (List[Tuple[str, str, str]]): data to initialize dataset with\end{DoxyVerb}
  
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classdataset_1_1_default_dataset_a3c243fb9702565f827bd3b89783cabfb}\index{dataset.DefaultDataset@{dataset.DefaultDataset}!\_\_call\_\_@{\_\_call\_\_}}
-\index{\_\_call\_\_@{\_\_call\_\_}!dataset.DefaultDataset@{dataset.DefaultDataset}}
-\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
-{\footnotesize\ttfamily \label{classdataset_1_1_default_dataset_a3c243fb9702565f827bd3b89783cabfb} 
- Tuple\mbox{[}str, str, str\mbox{]} dataset.\+Default\+Dataset.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwds}{}\end{DoxyParamCaption})}
+\Hypertarget{classdataset_1_1_default_dataset_a16ac2f71fda54038bc3024e47d978be8}\index{dataset.DefaultDataset@{dataset.DefaultDataset}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!dataset.DefaultDataset@{dataset.DefaultDataset}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classdataset_1_1_default_dataset_a16ac2f71fda54038bc3024e47d978be8} 
+ Tuple\mbox{[}str, str, str\mbox{]} dataset.\+Default\+Dataset.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Get data by index
+\begin{DoxyVerb}Get item by index
+
+Args:
+    index (int): index of item
 
 Returns:
-    Tuple[str, str, str]: data
-\end{DoxyVerb}
+    Tuple[str, str, str]: item at index\end{DoxyVerb}
  
 
-Reimplemented from \mbox{\hyperlink{classdataset_1_1_dataset_ab1c50966eec5cf4dc229f7b3fa288005}{dataset.\+Dataset}}.
+Reimplemented from \mbox{\hyperlink{classdataset_1_1_dataset}{dataset.\+Dataset}}.
 
 
 

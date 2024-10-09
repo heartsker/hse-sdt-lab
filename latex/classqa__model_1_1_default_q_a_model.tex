@@ -1,0 +1,71 @@
+\doxysection{qa\+\_\+model.\+Default\+QAModel Class Reference}
+\hypertarget{classqa__model_1_1_default_q_a_model}{}\label{classqa__model_1_1_default_q_a_model}\index{qa\_model.DefaultQAModel@{qa\_model.DefaultQAModel}}
+Inheritance diagram for qa\+\_\+model.\+Default\+QAModel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classqa__model_1_1_default_q_a_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classqa__model_1_1_default_q_a_model_a566cf69595062bebb7b1f82a63145299}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classqa__model_1_1_default_q_a_model_af0611516ab97dcfbee87834970406960}{predict}} (self, str question, str context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classqa__model_1_1_base_q_a_model}{qa\+\_\+model.\+Base\+QAModel}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classqa__model_1_1_default_q_a_model_a3f1bd2ebbbcac4bf8dbe91221ca1edbf}\label{classqa__model_1_1_default_q_a_model_a3f1bd2ebbbcac4bf8dbe91221ca1edbf} 
+{\bfseries model} = Bert\+For\+Question\+Answering.\+from\+\_\+pretrained(\textquotesingle{}bert-\/large-\/uncased-\/whole-\/word-\/masking-\/finetuned-\/squad\textquotesingle{})
+\item 
+\Hypertarget{classqa__model_1_1_default_q_a_model_a2f4aad0eccf76dc6e3cd34e3cca16a78}\label{classqa__model_1_1_default_q_a_model_a2f4aad0eccf76dc6e3cd34e3cca16a78} 
+{\bfseries tokenizer} = Bert\+Tokenizer.\+from\+\_\+pretrained(\textquotesingle{}bert-\/large-\/uncased-\/whole-\/word-\/masking-\/finetuned-\/squad\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Default QA model
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classqa__model_1_1_default_q_a_model_a566cf69595062bebb7b1f82a63145299}\index{qa\_model.DefaultQAModel@{qa\_model.DefaultQAModel}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!qa\_model.DefaultQAModel@{qa\_model.DefaultQAModel}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classqa__model_1_1_default_q_a_model_a566cf69595062bebb7b1f82a63145299} 
+ None qa\+\_\+model.\+Default\+QAModel.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize default QA model
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classqa__model_1_1_base_q_a_model_aed356014316ab008e1afa19b7adc386c}{qa\+\_\+model.\+Base\+QAModel}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classqa__model_1_1_default_q_a_model_af0611516ab97dcfbee87834970406960}\index{qa\_model.DefaultQAModel@{qa\_model.DefaultQAModel}!predict@{predict}}
+\index{predict@{predict}!qa\_model.DefaultQAModel@{qa\_model.DefaultQAModel}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily \label{classqa__model_1_1_default_q_a_model_af0611516ab97dcfbee87834970406960} 
+ str qa\+\_\+model.\+Default\+QAModel.\+predict (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{question}{, }\item[{str}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Predict answer for question and context
+
+Args:
+    question (str): question to predict answer for
+    context (str): context to predict answer from
+
+Returns:
+    str: predicted answer\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classqa__model_1_1_base_q_a_model}{qa\+\_\+model.\+Base\+QAModel}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+qa\+\_\+model.\+py\end{DoxyCompactItemize}

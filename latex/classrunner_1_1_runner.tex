@@ -1,0 +1,67 @@
+\doxysection{runner.\+Runner Class Reference}
+\hypertarget{classrunner_1_1_runner}{}\label{classrunner_1_1_runner}\index{runner.Runner@{runner.Runner}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classrunner_1_1_runner_aad9caf60e60a0c8ff99ab40d44fa41f7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classrunner_1_1_runner_a0a3f6b4eab2435e60590bdf7fd31e1f2}{run}} (self, str question, str context)
+\item 
+None \mbox{\hyperlink{classrunner_1_1_runner_af15633acab25a3dc4a574dee106a6d55}{start}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classrunner_1_1_runner_aacaa7c4f0d48273bf48e7f530788203c}\label{classrunner_1_1_runner_aacaa7c4f0d48273bf48e7f530788203c} 
+{\bfseries model} = \mbox{\hyperlink{classqa__model_1_1_default_q_a_model}{Default\+QAModel}}()
+\item 
+\Hypertarget{classrunner_1_1_runner_a795ab91e0c36c8281ae5a50b0a741c9b}\label{classrunner_1_1_runner_a795ab91e0c36c8281ae5a50b0a741c9b} 
+{\bfseries dataset} = \mbox{\hyperlink{classdataset_1_1_default_dataset}{Default\+Dataset}}(\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Runner
+Responsible for running requests to QA model on dataset
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrunner_1_1_runner_aad9caf60e60a0c8ff99ab40d44fa41f7}\index{runner.Runner@{runner.Runner}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!runner.Runner@{runner.Runner}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classrunner_1_1_runner_aad9caf60e60a0c8ff99ab40d44fa41f7} 
+ None runner.\+Runner.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize runner with default QA model and dataset
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrunner_1_1_runner_a0a3f6b4eab2435e60590bdf7fd31e1f2}\index{runner.Runner@{runner.Runner}!run@{run}}
+\index{run@{run}!runner.Runner@{runner.Runner}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classrunner_1_1_runner_a0a3f6b4eab2435e60590bdf7fd31e1f2} 
+ str runner.\+Runner.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{question}{, }\item[{str}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run request to QA model on dataset
+
+Args:
+    question (str): question to predict answer for
+    context (str): context to predict answer from
+
+Returns:
+    str: predicted answer\end{DoxyVerb}
+ \Hypertarget{classrunner_1_1_runner_af15633acab25a3dc4a574dee106a6d55}\index{runner.Runner@{runner.Runner}!start@{start}}
+\index{start@{start}!runner.Runner@{runner.Runner}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classrunner_1_1_runner_af15633acab25a3dc4a574dee106a6d55} 
+ None runner.\+Runner.\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start runner
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+runner.\+py\end{DoxyCompactItemize}
