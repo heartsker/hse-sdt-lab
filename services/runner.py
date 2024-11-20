@@ -1,5 +1,6 @@
-from dataset import DefaultDataset
-from qa_model import DefaultQAModel
+from services.dataset import DefaultDataset
+from services.qa_model import DefaultQAModel
+
 
 class Runner:
     """Runner
