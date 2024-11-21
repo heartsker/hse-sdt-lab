@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
-from transformers import BertForQuestionAnswering, BertTokenizer, logging
-from typing import Tuple
+
 from torch import torch
+from transformers import BertForQuestionAnswering, BertTokenizer, logging
 
 logging.set_verbosity_error()
 
@@ -30,8 +30,10 @@ class DefaultQAModel(BaseQAModel):
         """
         super().__init__()
 
-        self.model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
-        self.tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
+        pretrained_name = 'bert-large-uncased-whole-word-masking-finetuned-squad'
+        tokenizer_name = 'bert-large-uncased-whole-word-masking-finetuned-squad'
+        self.model = BertForQuestionAnswering.from_pretrained(pretrained_name)
+        self.tokenizer = BertTokenizer.from_pretrained(tokenizer_name)
 
     def predict(self, question: str, context: str) -> str:
         """Predict answer for question and context

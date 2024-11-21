@@ -37,7 +37,7 @@ class Runner:
             while not question:
                 question = input("Please enter question: ")
 
-            context = input("Please enter context (or press Enter to use previous one): ") or context
+            context = input("Please enter context (or press Enter to use previous one):") or context
             while not context:
                 context = input("Please enter context: ")
 
