@@ -81,21 +81,3 @@ class DefaultQAModel(BaseQAModel):
             answer = "Unable to find the answer to your question."
 
         return answer
-
-    # def __predict_indices(self, question: str, context: str) -> Tuple[int, int]:
-    #     """Predict answer indices for question and context
-    #
-    #     Args:
-    #         question (str): question to predict answer for
-    #         context (str): context to predict answer from
-    #
-    #     Returns:
-    #         Tuple[int, int]: predicted answer indices
-    #
-    #     """
-    #
-    #     output = model(torch.tensor([input_ids]), token_type_ids=torch.tensor([segment_ids]))
-    #     answer_start = torch.argmax(output.start_logits)
-    #     answer_end = torch.argmax(output.end_logits)
-    #
-    #     return Tuple(answer_start, answer_end)
