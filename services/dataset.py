@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Any, Tuple, List
+from typing import List, Tuple
 
 
 class Dataset(ABC):

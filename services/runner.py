@@ -1,5 +1,6 @@
-from dataset import DefaultDataset
-from qa_model import DefaultQAModel
+from services.dataset import DefaultDataset
+from services.qa_model import DefaultQAModel
+
 
 class Runner:
     """Runner
@@ -36,7 +37,7 @@ class Runner:
             while not question:
                 question = input("Please enter question: ")
 
-            context = input("Please enter context (or press Enter to use previous one): ") or context
+            context = input("Please enter context (or press Enter to use previous one):") or context
             while not context:
                 context = input("Please enter context: ")
 
